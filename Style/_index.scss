@@ -1,0 +1,136 @@
+@use "variables" as *;
+
+.bodyIndex {
+  .imagenPortada {
+    .imagenCarousel {
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  .seccionBannerAnos {
+    background-color: rgba(126, 168, 152, 0.5);
+    text-align: center;
+
+    .textoBannerAnos {
+      font-size: 24px;
+    }
+  }
+
+  .subTitulo {
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .primeraFilaSeccion {
+    .noticiaCard {
+      margin: 10px 0;
+
+      .noticiaColumnaImagen {
+        object-fit: cover;
+        padding: 5px;
+      }
+
+      .tituloNoticia {
+        font-size: 20px;
+      }
+
+      .noticiaLinkTexto {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .seccionCometido {
+    background-color: $color-principal;
+    padding-top: 20px;
+    border-radius: 15px;
+
+    .presentacion {
+      text-align: center;
+
+      .parrafoCometido {
+        font-size: 16px;
+        text-align: justify;
+        padding: 15px;
+      }
+
+      .presentacionFoto {
+        width: 90%;
+      }
+    }
+  }
+
+  .contenidoSeccionMujeresFoto {
+    border-radius: 20px;
+  }
+
+  .contenidoSeccionMujeresLogo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto 0;
+  }
+
+  .seccionServicios {
+    .seccionCardsServicios {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      > [class*="col-"] {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: unset !important;
+        max-width: 100% !important;
+      }
+
+      .cardServicios {
+        text-align: center;
+        background-color: $color-principal;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0;
+
+        .cardServicioLogo {
+          height: 100px;
+        }
+
+        .cardServicioInformacion {
+          background-color: $color-secundario;
+          border-radius: 20px;
+          padding: 5px;
+          color: $color-blanco;
+          font-size: 15px;
+        }
+
+        .tituloCardServicios {
+          color: $color-blanco;
+          font-size: 20px;
+          margin-top: 10px;
+        }
+
+        .nombreProfesional {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .informacionProfesional {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.seccionTienda {
+  text-align: center;
+  .recuadroTienda {
+    .tiendaLogo {
+      width: 50%;
+    }
+  }
+}

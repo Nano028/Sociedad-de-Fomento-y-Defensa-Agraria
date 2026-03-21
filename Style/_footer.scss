@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+.contacto {
+  color: $color-blanco;
+  background-color: $color-principal;
+  text-align: center;
+
+  .contactoContenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contactoLogo {
+      width: 50px;
+    }
+
+    .contactoInfo {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+.mapa {
+  padding: 20px;
+}

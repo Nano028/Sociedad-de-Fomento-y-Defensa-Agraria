@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER MOBILE FIRST */
+.cabecera {
+  margin: 0px;
+  background-color: rgba(240, 240, 240, 0.8);
+  position: fixed;
+  z-index: 1000;
+  align-items: center;
+  .navbar {
+    border-radius: 20px;
+    padding: 0;
+    .container-fluid {
+      justify-content: start;
+      background-color: rgba(6, 96, 49, 0.589);
+      border-radius: 20px;
+      height: 150px;
+      #navbarNav {
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100%;
+          .nav-item {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 500;
+            .nav-link {
+              font-weight: lighter;
+              color: rgba(250, 250, 250, 1);
+            }
+            .disabled {
+              color: rgb(128, 128, 128);
+            }
+          }
+        }
+      }
+    }
+  }
+  #logoMenu {
+  }
+}
+
+/* ---------------HEADER MD--------------- */
+@media (min-width: 768px) {
+  .cabecera {
+    .navbar {
+      .container-fluid {
+        #navbarNav {
+          .navbar-nav {
+            .nav-item {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------HEADER LG--------------- */
+@media (min-width: 992px) {
+  .bodyAlmacen,
+  .bodyHistoria,
+  .bodyNovedades,
+  .bodyAcerca,
+  .bodyIndex {
+    .cabecera {
+      .navbar {
+        .container-fluid {
+          margin: 0;
+          height: 17vw;
+          #navbarNav {
+            .navbar-nav {
+              .nav-item {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+        #logoMenu {
+          display: flex;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* --------------- INDEX MOBILE FIRST --------------- */
+.bodyIndex {
+  background-color: rgb(240, 240, 240);
+  .imagenPortada {
+    .carousel-inner {
+      .carousel-item {
+        .imagenCarousel {
+          height: 50vw;
+        }
+      }
+    }
+  }
+
+  .seccionBannerAnos {
+    background-color: rgba(126, 168, 152, 0.5);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    .textoBannerAnos {
+      font-size: 24px;
+    }
+  }
+}
+
+.primeraFilaSeccion {
+  align-items: center;
+  .noticiaCometido {
+    justify-content: space-around;
+  }
+  .seccionNoticias {
+    .noticiaCard {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      .noticiaColumnaImagen {
+        object-fit: cover;
+        padding: 5px;
+      }
+      .noticiaColumnaTexto {
+        .tituloNoticia {
+          font-size: 20px;
+        }
+        .noticiaLink {
+          .noticiaLinkTexto {
+            font-size: 18px;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+.seccionCometido {
+  padding-top: 20px;
+  background-color: rgba(126, 168, 152, 1);
+  .presentacion {
+    text-align: center;
+    .parrafoCometido {
+      font-size: 16px;
+      text-align: justify;
+      padding: 15px 4px 30px 4px;
+    }
+    .presentacionFoto {
+      padding-bottom: 50px;
+      width: 90%;
+    }
+  }
+}
+.seccionMujeres {
+  background-color: rgb(255, 255, 255);
+  .contenidoSeccionMujeres {
+    justify-content: center;
+    .contenidoSeccionMujeresLogo {
+      object-fit: contain;
+    }
+    .contenidoSeccionMujeresFoto {
+      width: 90%;
+      object-fit: contain;
+    }
+  }
+}
+.seccionServicios {
+  margin-bottom: 10px;
+  .seccionCardsServicios {
+    text-align: center;
+    .cardServicios {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: rgba(126, 168, 152, 1);
+      padding: 10px;
+      border-radius: 15px;
+      .cardServicioLogo {
+        padding: 10px;
+        width: 200px;
+      }
+    }
+  }
+}
+.botonTiendaMain {
+  text-decoration: none;
+  color: black;
+  .seccionTienda {
+    background-color: rgba(250, 250, 250, 1);
+    justify-content: center;
+    .boton {
+      background-position: center;
+      background-image: url("../Multimedia/Galerías/Galpon/GalponConTransparencia.jpg");
+      background-position: contain;
+      background-repeat: no-repeat;
+      justify-content: center;
+      text-align: center;
+      .botonLogo {
+        object-fit: contain;
+        width: 60%;
+      }
+      .subTituloTienda {
+        font-weight: 700;
+        font-size: 32px;
+      }
+      .botonTiendaTexto {
+        font-size: 24px;
+      }
+    }
+    .tiendaPromocion {
+      align-items: center;
+      .promocionDescripcion {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.subTitulo {
+  text-align: center;
+  padding: 25px;
+}
+
+/* ---------------INDEX MD--------------- */
+@media (min-width: 768px) {
+  .bodyIndex {
+    .seccionBannerAnos {
+      .textoBannerAnos {
+        font-size: 28px;
+      }
+    }
+
+    .seccionNoticias {
+      .noticiaCard {
+        .noticiaColumnaTexto {
+          font-size: 26px;
+          .tituloNoticia {
+            font-size: 24px;
+          }
+          .noticiaLink {
+            .noticiaLinkTexto {
+              font-size: 18px;
+              margin-top: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .seccionCometido {
+    .presentacion {
+      .parrafoCometido {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .seccionMujeres {
+    .contenidoSeccionMujeresLogo {
+      height: 30vw;
+    }
+    .contenidoSeccionMujeresTexto {
+      font-size: 20px;
+    }
+  }
+
+  .seccionServicios {
+    .seccionCardsServicios {
+      .cardServicios {
+        .tituloCardServicios {
+          font-size: 28px;
+        }
+        .nombreProfesional {
+          font-size: 22px;
+        }
+        .informacionProfesional {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .seccionTienda {
+    .subSeccionTienda {
+      .subTituloTienda {
+        font-size: 36px;
+      }
+    }
+    .boton,
+    .promocion {
+      text-align: center;
+    }
+  }
+  .seccionServicios {
+    margin-bottom: 10px;
+    .seccionCardsServicios {
+      justify-content: space-around;
+    }
+  }
+  .subTitulo {
+    font-size: 32px;
+  }
+}
+
+/* ---------------INDEX LG--------------- */
+@media (min-width: 992px) {
+  .bodyIndex {
+    .carousel-item {
+      .imagenCarousel {
+        height: 50vw;
+      }
+    }
+    .seccionBannerAnos {
+      .textoBannerAnos {
+        font-size: 32px;
+      }
+    }
+    .seccionMujeres {
+      margin-bottom: 20px;
+      .contenidoSeccionMujeres {
+        align-items: center;
+        justify-content: space-around;
+        .contenidoSeccionMujeresTexto {
+          .contenidoSeccionMujeresParrafo {
+            font-size: 20px;
+            padding-left: 0px;
+          }
+        }
+        .contenidoSeccionMujeresFoto {
+          width: 40vw;
+        }
+      }
+    }
+    .seccionServicios {
+      background-color: rgba(126, 168, 152, 0.5);
+      .seccionCardsServicios {
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+/* ---------------FOOTER MOBILE FIRST--------------- */
+.contacto {
+  color: rgba(250, 250, 250, 1);
+  background-color: rgba(126, 168, 152, 1);
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  .contactoContenedor {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .contactoLogo {
+      width: 15vw;
+    }
+    .contactoInfo {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.mapa {
+  padding: 35px;
+}
+
+/* ---------------FOOTER MD--------------- */
+@media (min-width: 768px) {
+  .seccionFooter {
+    .contacto {
+      justify-content: center;
+      align-items: center;
+      .contactoContenedor {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .contactoLogo {
+          justify-self: center;
+        }
+        .contactoTexto {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+/* ---------------FOOTER LG --------------- */
+@media (min-width: 992px) {
+  .seccionFooter {
+    .contacto {
+      .contactoContenedor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-around;
+        align-items: center;
+        .contactoLogo {
+          width: 8vw;
+          height: auto;
+        }
+        .contactoTexto {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* ---------------NOVEDADES MOBILE FIRST --------------- */
+.bodyNovedades {
+  .informacionInteres {
+    .informacion {
+      .noticiaLink {
+        .noticiaLinkTexto {
+          padding-left: 10px;
+        }
+      }
+    }
+    .seccionSitios {
+      .sitiosInteres {
+        .botonSitioInteres {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .seccionProyectosNovedades {
+    .noticiaContenedor {
+      justify-content: space-around;
+      .noticiaCard {
+        .noticiaContenido {
+          border-radius: 10px;
+          background-color: rgba(126, 168, 152, 1);
+          padding: 10px;
+          margin-bottom: 50px;
+          text-align: center;
+          .noticiaTitulo {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 50px;
+          }
+          .noticiaImagenPrincipal,
+          .noticiaGaleria {
+            width: 80%;
+            margin-top: 15px;
+            margin-bottom: 50px;
+          }
+          .noticiaParrafo {
+            font-size: 17px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------NOVEDADES MD --------------- */
+@media (min-width: 768px) {
+  .bodyNovedades {
+    .informacionInteres {
+      .informacion {
+        .noticiaLink {
+          .noticiaLinkTexto {
+            font-size: 26px;
+          }
+        }
+      }
+      .seccionSitios {
+        .sitiosInteres {
+          .botonSitioInteres {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .seccionProyectosNovedades {
+      .noticiaContenedor {
+        .noticiaCard {
+          .noticiaContenido {
+            text-align: center;
+            .noticiaTitulo {
+              font-size: 32px;
+              text-align: center;
+              margin-top: 15px;
+              margin-bottom: 50px;
+            }
+            .noticiaParrafo {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------NOVEDADES LG --------------- */
+@media (min-width: 992px) {
+  .bodyNovedades {
+    .informacionInteres {
+      .informacion {
+        .noticiaLink {
+          .noticiaLinkTexto {
+            font-size: 24px;
+          }
+        }
+      }
+      .seccionSitios {
+        .sitiosInteres {
+          .botonSitioInteres {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .seccionProyectosNovedades {
+      .noticiaContenedor {
+        .noticiaCard {
+          .noticiaContenido {
+            text-align: center;
+            .noticiaTitulo {
+              font-size: 28px;
+              text-align: center;
+              margin-top: 15px;
+              margin-bottom: 50px;
+            }
+            .noticiaParrafo {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------ACERCA MOBILE FIRST --------------- */
+.bodyAcerca {
+  background-color: (240, 240, 240);
+  width: 100%;
+  .seccionMision {
+    text-align: justify;
+  }
+  .primeraFilaAcerca {
+    margin-bottom: 80px;
+    justify-content: space-around;
+    .acercaTexto {
+      text-align: justify;
+      padding: 20px;
+    }
+    .acercaFoto {
+      width: 100%;
+      object-position: cover;
+      padding: 20px;
+    }
+    .acordeon {
+      margin-left: 10px;
+      padding-left: 10px;
+      border-radius: 10px;
+      background-color: rgba(126, 168, 152, 0.5);
+      .accordion {
+        font-size: 18px;
+        margin-bottom: 30px;
+        .accordion-item {
+          font-size: 17px;
+          text-align: center;
+          .tituloAcordeon {
+            .accordionButtonRow {
+              text-decoration: none;
+              .accordion-button {
+                font-size: 17px;
+              }
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              .cargoDirectivo {
+                font-size: 17px;
+                margin-top: 3px;
+                margin-bottom: 30px;
+              }
+              .accordion-header {
+                .closingButton {
+                  text-decoration: none;
+                }
+              }
+              .subTituloAutoridades {
+                margin: 30px;
+              }
+              .subTituloAutoridadesSuplentes {
+                margin-top: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .segundaFilaAcerca .memoriasRow {
+    text-align: center;
+    justify-content: space-around;
+    .linkMemorias {
+      .linkMemoria {
+        color: rgb(255, 255, 255);
+        background-color: rgba(13, 80, 45, 1);
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* ---------------ACERCA MD--------------- */
+@media (min-width: 768px) {
+  .bodyAcerca {
+    .acercaTexto {
+      font-size: 18px;
+    }
+    .segundaFilaAcerca .memoriasRow {
+      text-align: center;
+      .linkMemorias {
+        justify-content: space-between;
+        .linkMemoria {
+        }
+      }
+    }
+  }
+}
+
+/* ---------------ACERCA LG --------------- */
+@media (min-width: 992px) {
+  .bodyAcerca {
+    .primeraFilaAcerca {
+      .contenedorAcerca {
+        .acercaFoto {
+        }
+      }
+    }
+    .segundaFilaAcerca .memoriasRow {
+      text-align: center;
+      justify-content: space-arround;
+      padding-left: 10px;
+      .linkMemorias {
+        .linkMemoria {
+          font-size: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* ---------------ACERCA MOBILE FIRST --------------- */
+.bodyHistoria {
+  .parrafoHistoria {
+    padding-left: 30px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .imagenHistoria {
+    padding-left: 30px;
+  }
+  .leyendaFotoHistoria {
+    padding-left: 30px;
+    font-weight: 700;
+  }
+  .sectorPresidentes {
+    background-color: rgba(126, 168, 152, 0.5);
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .fotoPte {
+      border-radius: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .sectorImagenesDestacadas {
+    .imagenesDestacadas {
+      align-content: center;
+      text-align: center;
+      .carousel-inner {
+        .carousel-item {
+          .imagenDestacadaCarousel {
+            height: 60vw;
+            object-fit: contain;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sectorDocumentosHistoricos {
+  background-color: rgb(210, 250, 229);
+  border-radius: 10px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  .cardDocumentoHistorico {
+    background-color: rgba(126, 168, 152, 1);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    .imagenDocumentoHistorico {
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+    .subTituloDocumento {
+      padding-top: 10px;
+    }
+  }
+}
+
+/* ---------------ACERCA MD--------------- */
+@media (min-width: 768px) {
+  .bodyHistoria {
+    .parrafoHistoria {
+      font-size: 18px;
+      padding-left: 30px;
+      text-align: justify;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .leyendaFotoHistoria {
+      font-size: 16px;
+    }
+  }
+}
+
+/* ---------------HISTORIA LG --------------- */
+@media (min-width: 992px) {
+  .bodyHistoria {
+    .parrafoHistoria {
+      font-size: 20px;
+    }
+    .leyendaFotoHistoria {
+      text-align: right;
+      font-size: 18px;
+    }
+  }
+}
+
+/* ---------------ALMACEN MOBILE FIRST--------------- */
+.bodyAlmacen {
+  background-color: rgba(126, 168, 152, 0.5);
+  .primeraFilaGalpon {
+    margin-bottom: 20px;
+    .novedadesIngresos {
+      margin-bottom: 30px;
+      justify-content: center;
+      .carouselNovedades {
+      }
+    }
+  }
+
+  .fotosGaleriaGalpon {
+    align-content: center;
+    text-align: center;
+    .carousel-inner {
+      .carousel-item {
+        .imagenDestacadaCarousel {
+          background-color: red;
+          height: 200vw;
+          object-fit: contain;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .productosGalpon {
+    .galeriaProducto {
+      max-width: 100%;
+      height: auto;
+    }
+    .listaProductos {
+      .listaItems {
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+    .segundaLista {
+      .listaItems {
+        text-align: end;
+      }
+    }
+  }
+  .cuartaFila {
+    margin-top: 40px;
+    .fotoAdministracionGalpon {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      max-width: 90%;
+      height: min-content;
+    }
+  }
+
+  .titulosSecundarios {
+    align-content: center;
+    .subTituloSecundario {
+      padding-left: 20px;
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}
+
+/* ---------------ALMACEN MD--------------- */
+@media (min-width: 768px) {
+  .subTituloSecundario {
+    font-size: 20px;
+  }
+}
+
+/* ---------------ALMACEN LG --------------- */
+@media (min-width: 992px) {
+  .bodyAlmacen {
+    .primeraFilaGalpon {
+      background-color: rgba(126, 168, 152, 1);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .productosGalpon {
+      .galeriaProducto {
+      }
+      .listaProductos {
+        list-style-type: none;
+        text-decoration: none;
+        margin-bottom: 20px;
+      }
+      .segundaLista {
+        .listaItems {
+          margin-top: 10px;
+          text-align: end;
+        }
+      }
+    }
+    .segundaFilaGalpon {
+      margin-bottom: 40px;
+    }
+    .cuartaFila {
+      background-color: rgba(126, 168, 152, 0.5);
+      margin-top: 40px;
+      justify-content: space-around;
+      .fotoAdministracionGalpon {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .subTituloSecundario {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 22px;
+    }
+  }
+}

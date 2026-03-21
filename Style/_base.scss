@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-fondo;
+  padding-top: 0;
+}
+
+#indexBody {
+  padding-top: 140px; // compensa header fixed
+}
+
+.subTitulo {
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
