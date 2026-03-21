@@ -1,5 +1,10 @@
 @use "./variables" as *;
 
+.seccionFooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacto {
   color: $color-blanco;
   background-color: $color-principal;
@@ -21,6 +26,20 @@
   }
 }
 
-.mapa {
-  padding: 20px;
+.seccionFooter .mapa {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .seccionFooter {
+    flex-wrap: nowrap;
+  }
+
+  .seccionFooter .contacto {
+    width: 33.3333%;
+  }
+
+  .seccionFooter .mapa {
+    width: 66.6666%;
+  }
 }

@@ -80,6 +80,10 @@ body {
     font-size: 24px;
   }
 }
+.bodyIndex {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .bodyIndex .imagenPortada .imagenCarousel {
   height: 400px;
   -o-object-fit: cover;
@@ -187,6 +191,27 @@ body {
   width: 50%;
 }
 
+@media (min-width: 992px) {
+  /* ESPACIO PARA HEADER */
+  .contenedorBody {
+    padding-top: 120px;
+  }
+  /* SACAR FONDO BLANCO NAVBAR */
+  .cabecera .navbar {
+    background-color: transparent !important;
+  }
+  /* 4 CARDS EN FILA */
+  .seccionServicios .seccionCardsServicios {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px;
+  }
+}
+.seccionFooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacto {
   color: rgb(250, 250, 250);
   background-color: rgb(126, 168, 152);
@@ -205,6 +230,18 @@ body {
   font-weight: 600;
 }
 
-.mapa {
-  padding: 20px;
+.seccionFooter .mapa {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .seccionFooter {
+    flex-wrap: nowrap;
+  }
+  .seccionFooter .contacto {
+    width: 33.3333%;
+  }
+  .seccionFooter .mapa {
+    width: 66.6666%;
+  }
 }/*# sourceMappingURL=style.css.map */

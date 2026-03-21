@@ -1,6 +1,8 @@
 @use "variables" as *;
 
 .bodyIndex {
+  max-width: 1200px;
+  margin: 0 auto;
   .imagenPortada {
     .imagenCarousel {
       height: 400px;
@@ -132,5 +134,24 @@
     .tiendaLogo {
       width: 50%;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  /* ESPACIO PARA HEADER */
+  .contenedorBody {
+    padding-top: 120px;
+  }
+
+  /* SACAR FONDO BLANCO NAVBAR */
+  .cabecera .navbar {
+    background-color: transparent !important;
+  }
+
+  /* 4 CARDS EN FILA */
+  .seccionServicios .seccionCardsServicios {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px;
   }
 }
