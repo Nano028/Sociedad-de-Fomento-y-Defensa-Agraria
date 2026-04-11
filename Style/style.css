@@ -462,4 +462,211 @@ body {
   .news-projects .card-image {
     height: 160px;
   }
+}
+
+.organs {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f8fbff, #e6eef8);
+}
+.organs .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.organs .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0a2540;
+  font-weight: 600;
+}
+.organs .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.organs .accordion-item {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.organs .accordion-header {
+  width: 100%;
+  padding: 18px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a2540;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+.organs .accordion-header:hover {
+  background: rgba(58, 134, 255, 0.08);
+}
+.organs .accordion-header .icon {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+.organs .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 20px;
+}
+.organs .accordion-content ul {
+  padding: 10px 0 20px;
+  list-style: none;
+}
+.organs .accordion-content ul li {
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #1f2d3d;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.organs .accordion-content ul li:last-child {
+  border-bottom: none;
+}
+.organs .accordion-item.active .accordion-content {
+  max-height: 300px;
+}
+.organs .accordion-item.active .accordion-header .icon {
+  transform: rotate(45deg);
+}
+@media (max-width: 600px) {
+  .organs .title {
+    font-size: 1.6rem;
+  }
+}
+
+.about-org {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #eef3f9, #dbe7f5);
+}
+.about-org .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-org .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #0a2540;
+  font-weight: 600;
+}
+.about-org .content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.about-org .text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f2d3d;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.about-org .image-wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.about-org .image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.about-org .image-wrapper:hover img {
+  transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  .about-org .title {
+    font-size: 1.6rem;
+  }
+  .about-org .text {
+    font-size: 0.95rem;
+    padding: 16px;
+  }
+}
+
+.annual-reports {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f8fbff, #e6eef8);
+}
+.annual-reports .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.annual-reports .title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0a2540;
+  font-weight: 600;
+}
+.annual-reports .reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.annual-reports .report-group {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 25px 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.annual-reports .report-group:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.annual-reports .year {
+  font-size: 1.2rem;
+  color: #0a2540;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.annual-reports .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.annual-reports .report-btn {
+  display: inline-block;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #3a86ff, #0077b6);
+  transition: all 0.25s ease;
+}
+.annual-reports .report-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.annual-reports .report-btn.secondary {
+  background: linear-gradient(135deg, #6c757d, #adb5bd);
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .annual-reports .title {
+    font-size: 1.6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
