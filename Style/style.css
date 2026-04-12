@@ -1148,13 +1148,13 @@ body {
     background-image: url("../Multimedia/Landing/landing1.jpeg");
   }
   33% {
-    background-image: url("../Multimedia/Landing/landing2.jpeg");
+    background-image: url("../Multimedia/Landing/landing2.jpg");
   }
   66% {
-    background-image: url("../Multimedia/Landing/landing3.jpeg");
+    background-image: url("../Multimedia/Landing/landing3.jpg");
   }
   100% {
-    background-image: url("../Multimedia/Landing/landing4.jpeg");
+    background-image: url("../Multimedia/Landing/landing4.jpg");
   }
 }
 .hero-overlay {
