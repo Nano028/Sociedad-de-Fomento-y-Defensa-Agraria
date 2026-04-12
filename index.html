@@ -1,214 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
   <head>
     <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Style/style.css">
-  <title>Sociedad de Fomento y Defensa Agraria</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <title>Sociedad de Fomento y Defensa Agraria</title>
+  </head>
 
-<div class="container contenedorBody">
-<body id="indexBody" class="container-fluid bodyIndex">
-  <header class="cabecera row w-100">
-    <!-- Menu-->
-    <img class="col-sm-3 col-lg-3" id="logoMenu" src="./Multimedia/Icons/Mainlogo.png"
-      alt="Logo de la Sociedad de Fomento y Defensa Agraria">
-    <nav class="col-sm-9 col-lg-9 seccion navbar navbar-expand-lg bg-body-tertiary">
-      <div class="col-lg-9 container-fluid">
-        <a class="navbar-brand" href="./index.html"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-current="page" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/novedades.html">Noticias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/acerca.html">Acerca</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/historia.html">Historia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/almacen.html">Almacen</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div class="container contenedorBody">
+    <body id="indexBody" class="container-fluid bodyIndex">
+      <header class="cabecera row w-100">
+        <!-- Menu-->
+        <img
+          class="col-sm-3 col-lg-3"
+          id="logoMenu"
+          src="./Multimedia/Icons/Mainlogo.png"
+          alt="Logo de la Sociedad de Fomento y Defensa Agraria"
+        />
+        <nav
+          class="col-sm-9 col-lg-9 seccion navbar navbar-expand-lg bg-body-tertiary"
+        >
+          <div class="col-lg-9 container-fluid">
+            <a class="navbar-brand" href="./index.html"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/novedades.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/acerca.html">Acerca</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/almacen.html">Almacen</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide imagenPortada" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./Multimedia/Index/landing1.jpeg" class="d-block w-100 imagenCarousel" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./Multimedia/Index/landing2.jpg" class="d-block w-100 imagenCarousel" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./Multimedia/Index/landing3.jpg" class="d-block w-100 imagenCarousel" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./Multimedia/Index/landing4.jpg" class="d-block w-100 imagenCarousel" alt="...">
-      </div>
-    </div>
-  </div>
-  <!--SECCION BANNER-->
-  <div class="seccionBannerAnos" id="bannerAnos">
-    <h1 class="textoBannerAnos">94 Años</h1>
-    <h1 class="textoBannerAnos">Sembrando la tierra y cosechando sueños</h1>
-  </div>
-  <!--SECCION NOTICIAS-->
-  <section class="row col-12 primeraFilaSeccion">
-    <div class="col-sm-12 col-lg-5 seccionNoticias">
-      <h2 class="subTitulo"> Noticias </h2>
-      <!--CARD 1-->
-      <div class="row noticiaCard">
-        <img class="col-5 noticiaColumnaImagen" src="./Multimedia/Noticias/not18.jpg" alt="">
-        <div class="col-7 noticiaColumnaTexto">
-          <h4 class="titulo tituloNoticia">Uso y Manejo Seguro de Fitosanitario</h4>
-          <a class="noticiaLink" href="./Pages/novedades.html">
-            <p class="noticiaLinkTexto">En Agosto tuvo lugar el Curso Presencial de
-              "Uso y Manejo Seguro de Fitosanitario"...</p>
-          </a>
+      <!-- HERO LANDING -->
+      <section class="hero" id="hero-landing">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Apoyo al productor, compromiso con el desarrollo</h1>
+          <p>
+            Desde 1931 fortaleciendo el sector agrario con servicios,
+            representación y acompañamiento.
+          </p>
+          <a href="./pages/inicio.html" class="btn-primary">Conocé más</a>
         </div>
-      </div>
-      <!--CARD 2-->
-      <div class="row noticiaCard">
-        <img class="col-5 noticiaColumnaImagen" src="./Multimedia/Noticias/not17.jpg" alt="">
-        <div class="col-7 noticiaColumnaTexto">
-          <h4 class="titulo tituloNoticia">Uruguay aprobó el Plan Nacional de Bioinsumos</h4>
-          <a class="noticiaLink" href="./Pages/novedades.html">
-            <p class="noticiaLinkTexto">Uruguay aprobó oficialmente el Plan Nacional de Bioinsumos a través del Decreto
-              Nº...</p>
-          </a>
-        </div>
-      </div>
-      <!--CARD 3-->
-      <div class="row noticiaCard">
-        <img class="col-5 noticiaColumnaImagen" src="./Multimedia/Noticias/Portada-Articulo.png" alt="">
-        <div class="col-7 noticiaColumnaTexto">
-          <h4 class="titulo tituloNoticia">A Granja Nacional</h4>
-          <a class="noticiaLink" href="./Pages/novedades.html">
-            <p class="noticiaLinkTexto">Por el Directivo Alberto Iglesias...</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!--SECCION COMETIDOS-->
-    <div class="col-sm-12 col-lg-7 seccionCometido">
-      <div class="presentacion">
-        <h2 class="subTitulo">Nuestro Cometido</h2>
-        <p class="parrafoCometido">Somos una familia y como tal debemos actuar. Un buen padre cuida el techo,
-          cuida la economía, vela por los intereses de todos y a su vez genera herramientas que permitan la
-          supervicencia del grupo.</p>
-        <img class="presentacionFoto" src="./Multimedia/Index/Directiva.jpg" alt="Foto de la Directiva de la Sociedad">
-        <p class="parrafoCometido">La Comisión Directiva tiene la obligación de buscar esos caminos redoblando
-          esfuerzos para, en un contexto cambiante, ir encontrando los espacios que nos permitan seguir avanzando y, de
-          esa manera, lograr mantener nuestra casa en lugares de primera línea, acorde al espíritu de quienes nos
-          precedieron </p>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!--SECCION MUJERES-->
-  <section class="seccionMujeres">
-    <h2 class="subTitulo">Comisión de Mujeres</h2>
-    <div class="row w-100 contenidoSeccionMujeres">
-      <img class="col-sm-5 col-md-5 col-lg-2 contenidoSeccionMujeresLogo" src="./Multimedia/Icons/mujeres-logo.png"
-        alt="Logo Comisión Mujeres">
-      <div class="col-sm-7 col-md-6 col-lg-4 contenidoSeccionMujeresTexto">
-        <p class="contenidoSeccionMujeresParrafo">Días de reunión: Último Jueves de cada mes.</p>
-        <p class="contenidoSeccionMujeresParrafo">En breve, horario de atención en la oficina de la Comisión</p>
-        <p class="contenidoSeccionMujeresParrafo"> Contacto:</p>
-        <p class="contenidoSeccionMujeresParrafo">091-059-158</p>
-        <p class="contenidoSeccionMujeresParrafo">comisiondemujeressfda@hotmail.com</p>
-        <p class="contenidoSeccionMujeresParrafo">Facebook: Cmsfda AMANDAYE</p>
-        <p class="contenidoSeccionMujeresParrafo">Instagram: COMISIONDEMUJERES.SFDA</p>
-      </div>
-      <img class="col-sm-12 col-lg-6 contenidoSeccionMujeresFoto" src="./Multimedia/Index/Comision Mujeres.jpg"
-        alt="Comisión de Mujeres">
-    </div>
-  </section>
-  <!--SECCION SERVICIOS-->
-  <section class="seccionServicios">
-    <h3 class="subTitulo">Servicios</h3>
-    <div class="seccionCardsServicios">
-      <!--CARD 1-->
-      <div class="cardServicios cardServiciosImpar">
-        <img class="cardServicioLogo" src="./Multimedia/Icons/Arquitecto.png" alt="Logo Arquitecto">
-        <h5 class="tituloCardServicios">Arquitecta</h5>
-      <div class="cardServicioInformacion"> 
-         <p class="nombreProfesional">Arq. Florencia Chiazzaro</p>
-        <p class="informacionProfesional">099 575 969</p>
-        <p class="informacionProfesional">Lunes a Viernes</p>
-        <p class="informacionProfesional">09:00 a 17:00</p>
-      </div> 
-      </div>
-      <!--CARD 2-->
-      <div class="cardServicios cardServiciosImpar">
-        <img class="cardServicioLogo" src="./Multimedia/Icons/Abogado.png" alt="Logo Abogado">
-        <h5 class="tituloCardServicios">Abogado</h5>
-      <div class="cardServicioInformacion">  
-        <p class="nombreProfesional">Dr. Alfonso Daniel Mendez</p>
-        <p class="informacionProfesional">099 253 885</p>
-        <p class="informacionProfesional">Lunes a Viernes</p>
-        <p class="informacionProfesional">09:00 a 17:00</p>
-      </div> 
-      </div>
-      <!--CARD 3-->
-      <div class="cardServicios cardServiciosImpar">
-        <img class="cardServicioLogo" src="./Multimedia/Icons/Escribano.png" alt="Logo Escribana">
-        <h5 class="tituloCardServicios">Escribana</h5>
-      <div class="cardServicioInformacion">
-        <p class="nombreProfesional">Esc. Gladys Barbera</p>
-        <p class="informacionProfesional">099 198 088</p>
-        <p class="informacionProfesional">Lunes a Viernes</p>
-        <p class="informacionProfesional">09:00 a 17:00</p>
-      </div> 
-      </div>
-      <!--CARD 4-->
-      <div class="cardServicios cardServiciosImpar">
-        <img class="cardServicioLogo" src="./Multimedia/Icons/Agrimensor.png" alt=" Logo Agrónomo">
-        <h5 class="tituloCardServicios">Agrónomo</h5>
-        <div class="cardServicioInformacion">
-          <p class="nombreProfesional">Ing. Agr. Gustavo Braña</p>
-          <p class="informacionProfesional">099 293 161</p>
-          <p class="informacionProfesional">Lunes a Viernes</p>
-          <p class="informacionProfesional">09:00 a 17:00</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <h3 class="subTitulo subTituloTienda">Tienda Social</h3>
-  <section class="row seccionTienda">
-    <div class="col-sm-6 recuadroTienda">
-      <img class="tiendaLogo" src="./Multimedia/Icons/tienda.png" alt="Logo Almacen Social">
-      <p class="botonTiendaTexto subTituloTienda">Almacén de Campo Online - Lista de Productos</p>
-    </div>
-    <div class="col-sm-6 col-lg-6 tiendaPromocion">
-      <h3 class="col-lg-12 subTituloTienda">Promoción Especial</h3>
-       <img class="col-sm-6 promocionFoto" src="./Multimedia/Index/promocion 1.png"
-          alt="Foto de articulo en promocion">
-          <p class="promocionDescripcion">Botas de Goma - BATA</p>
-          <p class="promocionDescripcion">Talles desde el 40 al 46</p>
-        </div>
-      </div>
-    </section>
-  </a>
-
-  <!--WHATSSAPP FLOAT-->
-  <a
+      <!--WHATSSAPP FLOAT-->
+      <a
         href="https://wa.me/59891054794"
         class="whatsapp-float"
         target="_blank"
@@ -221,29 +91,46 @@
         </svg>
       </a>
 
-  <!--FOOTER-->
-  <footer class="w-100 seccionFooter">
-    <div class="col-sm-12 col-lg-4 contacto">
-      <h3 class="subTitulo">Contacto</h3>
-      <div class="row w-100 contactoContenedor contactoTelefono">
-        <img class="col-4 contactoLogo" src="./Multimedia/Icons/Telefono.png" alt="Logo Telefono">
-        <p class="col-8 contactoInfo">+598 2312 3779</p>
-      </div>
-      <div class="row w-100 contactoContenedor contactoEmail">
-        <img class="col-4 contactoLogo" src="./Multimedia/Icons/email.png" alt="Logo Email">
-        <p class="col-8 contactoInfo">sfda@internet.com.uy</p>
-      </div>
-    </div>
+      <!--FOOTER-->
+      <footer class="w-100 seccionFooter">
+        <div class="col-sm-12 col-lg-4 contacto">
+          <h3 class="subTitulo">Contacto</h3>
+          <div class="row w-100 contactoContenedor contactoTelefono">
+            <img
+              class="col-4 contactoLogo"
+              src="./Multimedia/Icons/Telefono.png"
+              alt="Logo Telefono"
+            />
+            <p class="col-8 contactoInfo">+598 2312 3779</p>
+          </div>
+          <div class="row w-100 contactoContenedor contactoEmail">
+            <img
+              class="col-4 contactoLogo"
+              src="./Multimedia/Icons/email.png"
+              alt="Logo Email"
+            />
+            <p class="col-8 contactoInfo">sfda@internet.com.uy</p>
+          </div>
+        </div>
 
-    <iframe class="mapa"src="
+        <iframe
+          class="mapa"
+          src="
       https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.798856338307!2d-56.273106999999996!3d-34.8361495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d43f0ec501f5%3A0xdf950d80f922c346!2sSOCIEDAD%20FOMENTO%20DEFENSA%20AGRARIA!5e0!3m2!1ses!2suy!4v1763428796534!5m2!1ses!2suy"
-      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-</div>
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </div>
 </html>

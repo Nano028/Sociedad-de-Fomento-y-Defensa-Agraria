@@ -1122,4 +1122,76 @@ body {
 .whatsapp-float:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* =====================================================
+    LANDING
+===================================================== */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#hero-landing {
+  animation: heroSlider 25s infinite;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes heroSlider {
+  0% {
+    background-image: url("../Multimedia/Landing/landing1.jpeg");
+  }
+  33% {
+    background-image: url("../Multimedia/Landing/landing2.jpeg");
+  }
+  66% {
+    background-image: url("../Multimedia/Landing/landing3.jpeg");
+  }
+  100% {
+    background-image: url("../Multimedia/Landing/landing4.jpeg");
+  }
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.hero-content p {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background: #ffffff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ddd;
 }/*# sourceMappingURL=style.css.map */
