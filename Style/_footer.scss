@@ -6,6 +6,7 @@
 }
 
 .contacto {
+  text-decoration: none;
   color: $color-blanco;
   background-color: $color-principal;
   text-align: center;
@@ -20,6 +21,8 @@
     }
 
     .contactoInfo {
+      text-decoration: none;
+      color: $color-blanco;
       font-size: 18px;
       font-weight: 600;
     }

@@ -2,6 +2,7 @@ $primary: #0a2540;
 $accent: #3a86ff;
 $text-dark: #1f2d3d;
 
+/* ================= HERO ================= */
 .store-hero {
   padding: 80px 20px;
   background: linear-gradient(135deg, #eef3f9, #dbe7f5);
@@ -33,7 +34,7 @@ $text-dark: #1f2d3d;
     display: inline-block;
     padding: 12px 20px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #3a86ff, #0077b6);
+    background: linear-gradient(135deg, $accent, #0077b6);
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -50,6 +51,7 @@ $text-dark: #1f2d3d;
     overflow: hidden;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 
+    video,
     img {
       width: 100%;
       height: 100%;
@@ -69,6 +71,7 @@ $text-dark: #1f2d3d;
   }
 }
 
+/* ================= GALERÍA ================= */
 .store-gallery {
   padding: 70px 20px;
   background: linear-gradient(135deg, #f8fbff, #e6eef8);
@@ -82,7 +85,7 @@ $text-dark: #1f2d3d;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #0a2540;
+    color: $primary;
   }
 
   .gallery-block {
@@ -92,24 +95,37 @@ $text-dark: #1f2d3d;
   .subtitle {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #1f2d3d;
+    color: $text-dark;
   }
 
   .slider {
     position: relative;
     overflow: hidden;
     border-radius: 16px;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(240, 240, 240);
   }
 
   .slides {
     display: flex;
+    width: 100%;
+    height: 100%;
     transition: transform 0.4s ease;
   }
 
   .slides img {
     min-width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 100%;
+
+    object-fit: contain; // 👈 clave: NO corta
+    object-position: center;
+
+    background: rgb(240, 240, 240);
   }
 
   .nav {
@@ -131,6 +147,7 @@ $text-dark: #1f2d3d;
   }
 }
 
+/* ================= SHOWCASE ================= */
 .store-showcase {
   padding: 70px 20px;
   background: linear-gradient(135deg, #eef3f9, #dbe7f5);
@@ -144,37 +161,52 @@ $text-dark: #1f2d3d;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 50px;
-    color: #0a2540;
+    color: $primary;
     font-weight: 600;
   }
 
   .subtitle {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #1f2d3d;
+    color: $text-dark;
   }
 
   .gallery-block {
+    align-items: center;
+    display: flex;
+    justify-content: center; /* 👈 centra hijos */
     margin-bottom: 50px;
   }
 
-  // 🔹 SLIDER
+  /* SLIDER FINAL */
   .slider {
     position: relative;
     overflow: hidden;
     border-radius: 16px;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(240, 240, 240);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 
   .slides {
     display: flex;
+    width: 100%;
+    height: 100%;
     transition: transform 0.4s ease;
   }
 
   .slides img {
     min-width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 100%;
+
+    object-fit: contain; // 👈 solución definitiva
+    object-position: center;
+
+    background: rgb(240, 240, 240);
   }
 
   .nav {
@@ -196,7 +228,7 @@ $text-dark: #1f2d3d;
     }
   }
 
-  // 🔹 PRODUCTOS
+  /* 🔹 PRODUCTOS */
   .products-block {
     margin-top: 30px;
   }
@@ -213,7 +245,7 @@ $text-dark: #1f2d3d;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.85);
     font-size: 0.9rem;
-    color: #1f2d3d;
+    color: $text-dark;
     backdrop-filter: blur(6px);
     transition: all 0.25s ease;
 
@@ -225,8 +257,8 @@ $text-dark: #1f2d3d;
   }
 
   @media (max-width: 768px) {
-    .slides img {
-      height: 260px;
+    .slider {
+      height: 300px;
     }
 
     .title {
