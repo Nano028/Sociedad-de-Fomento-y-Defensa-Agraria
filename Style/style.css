@@ -540,7 +540,7 @@ body {
   border-bottom: none;
 }
 .organs .accordion-item.active .accordion-content {
-  max-height: 300px;
+  max-height: 1000px;
 }
 .organs .accordion-item.active .accordion-header .icon {
   transform: rotate(45deg);

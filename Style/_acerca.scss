@@ -84,7 +84,7 @@ $text-dark: #1f2d3d;
   // Estado activo
   .accordion-item.active {
     .accordion-content {
-      max-height: 300px; // suficiente para varios integrantes
+      max-height: 1000px; // suficiente para varios integrantes
     }
 
     .accordion-header .icon {
