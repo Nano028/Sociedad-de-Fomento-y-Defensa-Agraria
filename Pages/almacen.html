@@ -23,9 +23,7 @@
           src="../Multimedia/Icons/MainLogo.png"
           alt="Logo de la Sociedad de Fomento y Defensa Agraria"
         />
-        <nav
-          class="col-9 col-lg-9 seccion navbar navbar-expand-lg bg-body-tertiary"
-        >
+        <nav class="col-9 col-lg-9 seccion navbar navbar-expand-lg bg-body-tertiary">
           <div class="col-lg-9 container-fluid">
             <a class="navbar-brand" href="../index.html"></a>
             <button
@@ -42,9 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./inicio.html"
-                    >Inicio</a
-                  >
+                  <a class="nav-link" aria-current="page" href="./inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./novedades.html">Noticias</a>
@@ -71,26 +67,76 @@
             <h1 class="title">Almacén Rural</h1>
 
             <p class="subtitle">
-              Un espacio dedicado a la comercialización de productos locales,
-              apoyando a pequeños productores y fortaleciendo la economía rural.
+              Un espacio dedicado a la comercialización de productos locales, apoyando a pequeños productores y
+              fortaleciendo la economía rural.
             </p>
 
             <a href="#productos" class="cta">Ver productos</a>
           </div>
 
-          <div class="image">
-            <video
-              class="col-12 col-lg-7 videoGalpon"
-              autoplay
-              loop
-              muted
-              id="video_fondo"
-            >
-              <source
-                src="../Multimedia/Almacen/Montacarga.mp4"
-                type="video/mp4"
+          <div class="hero-slider" aria-label="Imágenes del almacén">
+            <div class="hero-slides">
+              <img
+                class="hero-slide active"
+                src="../Multimedia/Almacen/IGType/agosto1.png"
+                alt="Interior del almacén rural"
               />
-            </video>
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGtype/agosto2.jpg"
+                alt="Productos disponibles en el almacén"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/agosto3.jpg"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/julio1.png"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/julio2.png"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/julio3.jpg"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/julio4.jpg"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/julio5.png"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/junio1.jpeg"
+                alt="Instalaciones del almacén rural"
+              />
+              <img
+                class="hero-slide"
+                src="../Multimedia/Almacen/IGType/junio2.jpeg"
+                alt="Instalaciones del almacén rural"
+              />
+            </div>
+
+            <button class="hero-nav hero-prev" type="button" aria-label="Imagen anterior">&#10094;</button>
+
+            <button class="hero-nav hero-next" type="button" aria-label="Imagen siguiente">&#10095;</button>
+
+            <div class="hero-dots" aria-label="Seleccionar imagen">
+              <button class="hero-dot active" type="button" aria-label="Ver imagen 1"></button>
+              <button class="hero-dot" type="button" aria-label="Ver imagen 2"></button>
+              <button class="hero-dot" type="button" aria-label="Ver imagen 3"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -119,40 +165,28 @@
 
           <!--LISTA DE PRODUCTOS-->
           <div class="products-block">
-            <h3 class="subtitle">Productos disponibles</h3>
+            <h3 class="subtitle" id="productos">Productos disponibles</h3>
 
             <div class="products-grid">
               <div class="product-item">Semillas hortícolas</div>
-              <div class="product-item">
-                Fungicidas sistémicos y de contacto
-              </div>
+              <div class="product-item">Fungicidas sistémicos y de contacto</div>
               <div class="product-item">Bactericidas</div>
               <div class="product-item">Insecticidas</div>
               <div class="product-item">Acaricidas</div>
               <div class="product-item">Coadyuvantes</div>
-              <div class="product-item">
-                Herbicidas sistémicos y de contacto
-              </div>
-              <div class="product-item">
-                Fertilizantes granulados, foliares y sales para fertirriego
-              </div>
+              <div class="product-item">Herbicidas sistémicos y de contacto</div>
+              <div class="product-item">Fertilizantes granulados, foliares y sales para fertirriego</div>
               <div class="product-item">Hormiguicidas</div>
-              <div class="product-item">
-                Pulverizadoras manuales y a batería
-              </div>
+              <div class="product-item">Pulverizadoras manuales y a batería</div>
               <div class="product-item">Raticidas</div>
               <div class="product-item">Pollos DP y ponedoras</div>
               <div class="product-item">Tolvas y bebederos plásticos</div>
               <div class="product-item">Raciones para aves y conejos</div>
               <div class="product-item">Tijeras y serruchos para poda</div>
               <div class="product-item">Motosierras y desmalezadoras</div>
-              <div class="product-item">
-                Artículos para riego (cintas, conectores, uniones)
-              </div>
+              <div class="product-item">Artículos para riego (cintas, conectores, uniones)</div>
               <div class="product-item">Mallas para sombra</div>
-              <div class="product-item">
-                Botas de goma y equipos para lluvia
-              </div>
+              <div class="product-item">Botas de goma y equipos para lluvia</div>
               <div class="product-item">Turbas</div>
               <div class="product-item">Almácigos plásticos</div>
             </div>
@@ -160,12 +194,7 @@
         </div>
       </section>
       <!--WHATSSAPP FLOAT-->
-      <a
-        href="https://wa.me/59891054794"
-        class="whatsapp-float"
-        target="_blank"
-        aria-label="Contactar por WhatsApp"
-      >
+      <a href="https://wa.me/59891054794" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
         <svg viewBox="0 0 32 32" class="icon">
           <path
             d="M16 0C7.163 0 0 7.163 0 16c0 2.821.737 5.465 2.02 7.757L0 32l8.472-2.216A15.89 15.89 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.503 0-4.86-.65-6.91-1.78l-.493-.28-5.027 1.314 1.343-4.9-.32-.507A13.21 13.21 0 0 1 2.667 16C2.667 8.82 8.82 2.667 16 2.667S29.333 8.82 29.333 16 23.18 29.333 16 29.333zm7.293-9.947c-.4-.2-2.36-1.167-2.727-1.3-.367-.133-.633-.2-.9.2-.267.4-1.033 1.3-1.267 1.567-.233.267-.467.3-.867.1-.4-.2-1.687-.62-3.213-1.98-1.187-1.06-1.987-2.367-2.22-2.767-.233-.4-.025-.617.175-.817.18-.18.4-.467.6-.7.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.7-.1-.2-.9-2.167-1.233-2.967-.325-.78-.656-.675-.9-.687l-.767-.013c-.267 0-.7.1-1.067.5-.367.4-1.4 1.367-1.4 3.333s1.433 3.867 1.633 4.133c.2.267 2.82 4.3 6.833 6.033.955.413 1.7.66 2.28.845.958.305 1.83.262 2.52.159.768-.114 2.36-.967 2.693-1.9.333-.933.333-1.733.233-1.9-.1-.167-.367-.267-.767-.467z"
@@ -174,44 +203,60 @@
       </a>
 
       <!--FOOTER-->
-      <footer class="w-100 seccionFooter">
-        <div class="col-12 col-lg-4 contacto">
-          <h3 class="subTitulo">Contacto</h3>
-          <div class="row w-100 contactoContenedor contactoTelefono">
-            <img
-              class="col-4 contactoLogo"
-              src="../Multimedia/Icons/Telefono.png"
-              alt="Logo Telefono"
-            />
-            <p class="col-8 contactoInfo">+598 2312 3779</p>
+      <footer class="seccionFooter">
+        <div class="footerContacto">
+          <div class="footerEncabezado">
+            <h2 class="footerTitulo">Contacto</h2>
+            <p class="footerDescripcion">Estamos para acompañar y asesorar al productor.</p>
           </div>
-          <div class="row w-100 contactoContenedor contactoEmail">
-            <img
-              class="col-4 contactoLogo"
-              src="../Multimedia/Icons/email.png"
-              alt="Logo Email"
-            />
-            <p class="col-8 contactoInfo">sfda@internet.com.uy</p>
-            <a
-              class="contactoInfo"
-              href="https://www.instagram.com/sfdefensaagraria/"
-              >Instagram</a
-            >
+
+          <div class="footerDatos">
+            <a class="footerDato" href="tel:+59823123779">
+              <span class="footerIcono">
+                <img src="../Multimedia/Icons/Telefono.png" alt="" aria-hidden="true" />
+              </span>
+
+              <span>
+                <small>Teléfono</small>
+                <strong>+598 2312 3779</strong>
+              </span>
+            </a>
+
+            <a class="footerDato" href="mailto:sfda@internet.com.uy">
+              <span class="footerIcono">
+                <img src="../Multimedia/Icons/email.png" alt="" aria-hidden="true" />
+              </span>
+
+              <span>
+                <small>Correo electrónico</small>
+                <strong>sfda@internet.com.uy</strong>
+              </span>
+            </a>
           </div>
+
+          <a
+            class="footerInstagram"
+            href="https://www.instagram.com/sfdefensaagraria/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Seguinos en Instagram
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <p class="footerCopyright">© 2026 Sociedad de Fomento y Defensa Agraria</p>
+          <p class="footerCopyright">Desarrollado por Nano Web Design</p>
         </div>
 
-        <iframe
-          class="mapa"
-          src="
-      https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.798856338307!2d-56.273106999999996!3d-34.8361495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d43f0ec501f5%3A0xdf950d80f922c346!2sSOCIEDAD%20FOMENTO%20DEFENSA%20AGRARIA!5e0!3m2!1ses!2suy!4v1763428796534!5m2!1ses!2suy"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+        <div class="footerMapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.798856338307!2d-56.273106999999996!3d-34.8361495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d43f0ec501f5%3A0xdf950d80f922c346!2sSOCIEDAD%20FOMENTO%20DEFENSA%20AGRARIA!5e0!3m2!1ses!2suy!4v1763428796534!5m2!1ses!2suy"
+            title="Ubicación de la Sociedad de Fomento y Defensa Agraria"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </footer>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
